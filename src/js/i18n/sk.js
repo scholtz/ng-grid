@@ -31,28 +31,33 @@
           remove: 'Vymazať triedenie'
         },
         aggregation: {
-          count: 'total rows: ',
-          sum: 'total: ',
-          avg: 'avg: ',
+          count: 'počet záznamov: ',
+          sum: 'suma: ',
+          avg: 'priemer: ',
           min: 'min: ',
           max: 'max: '
         },
+        pinning: {
+        pinLeft: 'Pripnúť vľavo',
+        pinRight: 'Pripnúť vpravo',
+        unpin: 'Odopnúť'
+        },
         gridMenu: {
-          columns: 'Columns:',
-          importerTitle: 'Import file',
-          exporterAllAsCsv: 'Export all data as csv',
-          exporterVisibleAsCsv: 'Export visible data as csv',
-          exporterSelectedAsCsv: 'Export selected data as csv',
-          exporterAllAsPdf: 'Export all data as pdf',
-          exporterVisibleAsPdf: 'Export visible data as pdf',
-          exporterSelectedAsPdf: 'Export selected data as pdf'
+          columns: 'Stĺpce:',
+          importerTitle: 'Import súboru',
+          exporterAllAsCsv: 'Export všetkých údajov do CSV',
+          exporterVisibleAsCsv: 'Export zobrazených údajov do CSV',
+          exporterSelectedAsCsv: 'Export vybratých údajov do CSV',
+          exporterAllAsPdf: 'Export všetkých údajov do PDF',
+          exporterVisibleAsPdf: 'Export zobrazených údajov do PDF',
+          exporterSelectedAsPdf: 'Export vybratých údajov do PDF'
         },
         importer: {
-          noHeaders: 'Column names were unable to be derived, does the file have a header?',
-          noObjects: 'Objects were not able to be derived, was there data in the file other than headers?',
-          invalidCsv: 'File was unable to be processed, is it valid CSV?',
-          invalidJson: 'File was unable to be processed, is it valid Json?',
-          jsonNotArray: 'Imported json file must contain an array, aborting.'
+          noHeaders: 'Názvy stĺpcov sa nepodarilo načítať. Má súbor hlavičku?',
+          noObjects: 'Objekty sa nepodarilo načítať. Boli v súbore aj iné údaje ako hlavička?',
+          invalidCsv: 'Súbor sa nepodarilo spracovať. Skontrolujte validitu CSV!',
+          invalidJson: 'Súbor sa nepodarilo spracovať. Skontrolujte validitu JSON?',
+          jsonNotArray: 'Súbor sa nepodarilo spracovať. Skontrolujte validitu JSON. JSON musí obsahovať pole.'
         }
       });
       return $delegate;
